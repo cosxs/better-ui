@@ -1,0 +1,16 @@
+# Local environment files
+.env.local
+.env.*.local
+
+# Dependencies
+node_modules
+
+# macOS folder config
+.DS_Store
+
+# Build output
+dist
+.output
+
+# TanStack temporary files
+.tanstack

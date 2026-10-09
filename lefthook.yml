@@ -1,0 +1,14 @@
+pre-commit:
+  piped: true
+  commands:
+    fix-staged:
+      priority: 1
+      glob: "*.{js,jsx,mjs,cjs,ts,tsx,mts,cts,json,jsonc,css,html,md,mdx,yml,yaml}"
+      exclude:
+        - ".agents/skills/**"
+        - "src/routeTree.gen.ts"
+      run: bun run fix {staged_files}
+      stage_fixed: true
+    check:
+      priority: 2
+      run: bun run check

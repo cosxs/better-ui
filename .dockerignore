@@ -1,0 +1,20 @@
+# Ignore everything by default
+**
+
+# Dependency manifests and build configuration
+!package.json
+!bun.lock
+!tsconfig.json
+!vite.config.ts
+# Tailwind uses Git ignore rules when scanning for classes
+!.gitignore
+
+# Application source and public assets
+!src/
+!src/**
+!public/
+!public/**
+
+# Shared defaults used by the production build
+!.env
+!.env.production
